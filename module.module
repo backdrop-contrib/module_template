@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file
+ * Put the `description` line from the `.info` file here.
+ */
+
+
+/**
+ * This file contains miscaleneous hooks.
+ */

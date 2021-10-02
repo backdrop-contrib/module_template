@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file
+ * Install, Uninstall, Update, and Requirements hooks.
+ */
+
+/**
+ * This file will be only be loaded under certain circumstances, in many cases
+ * when the rest of Backdrop is not yet boostraped.
+ */
