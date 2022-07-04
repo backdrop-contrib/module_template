@@ -1,0 +1,19 @@
+type = module
+name = MyModule
+description = A short description of this module.
+backdrop = 1.x
+
+; Link to the module's configuration page.
+configure = admin/config/system/mymodule
+
+; Add custom CSS & JS files.
+stylesheets[all][] = css/mymodule.css
+scripts[] = js/mymodule.js
+
+; List any dependencies here.
+dependencies[] = contact
+
+; Find suggested packages and tags at: https://docs.backdropcms.org/documentation/module-packages-and-tags
+package = User interface
+tags[] = Administration
+tags[] = Images

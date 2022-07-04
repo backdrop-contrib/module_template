@@ -1,0 +1,44 @@
+<?php
+/**
+ * @file
+ * A short description of this module.
+ */
+
+/**
+ * Implements hook_config_info().
+ */
+function mymodule_config_info() {
+  return array(
+    'mymodule.settings' => array(
+      'label' => t('MyModule settings'),
+      'group' => t('Configuration'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function mymodule_menu() {
+  return array(
+    'admin/config/system/mymodule' => array(
+      'title' => 'MyModule',
+      'description' => 'Configure MyModule.',
+      'page callback' => 'backdrop_get_form',
+      'page arguments' => array('mymodule_configuration_form'),
+      'access arguments' => array('administer mymodule'),
+      'file' => 'mymodule.admin.inc',
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function mymodule_permission() {
+  return array(
+    'administer mymodule' => array(
+      'title' => t('Administer MyModule'),
+    ),
+  );
+}
